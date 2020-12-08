@@ -50,10 +50,8 @@ para ler um cromossomo por vez.
 Em seguida, deve-se selecionar o ponto de quebra, a partir do qual os genes dos cromossomos
 (valores armazenados no vetor) serão cruzados. O ponto de quebra deve ser um número aleatório
 entre 0 e 7. Para gerar números aleatórios em Java, use os comandos abaixo:
-
 Random random = new Random();
 int x = random.nextInt(8);
-
 Após selecionar o ponto de quebra o programa deve gerar os cromossomos filhos. Para gerar o
 Filho 1, deve-se pegar os elementos das posições 0 até o número sorteado do Pai 1 e os valores
 das demais posições do Pai 2. O Filho 2 é gerado com os elementos das posições 0 até o número
