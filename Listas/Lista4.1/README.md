@@ -57,3 +57,6 @@ nome e o preço dos três produtos mais caros existentes no catálogo.
 um programa que leia a quantidade de passageiros presentes no voo, o nome e a cidade
 de destino de cada um deles. Por fim, o programa deve imprimir uma lista para cada
 cidade, com o nome dos passageiros que a tem como destino.
+
+10) Faça um programa que leia um conjunto de números reais A(30), ordene e apresente
+o conjunto resultante após a ordenação.
