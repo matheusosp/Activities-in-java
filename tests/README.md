@@ -39,7 +39,7 @@ Crie uma função para leitura da matriz, uma função para calcular e retornar 
 solicitados e uma função para apresentar todos os resultados.
 
 
-2) Algoritmos genéticos são uma área da Inteligência artificial que resolvem problemas
+2 Algoritmos genéticos são uma área da Inteligência artificial que resolvem problemas
 simulando o processo de evolução dos seres vivos. Cada possível solução do problema é
 representada por um cromossomo, que nada mais é do que um vetor que pode conter números ou
 caracteres, conforme o problema em questão. Um dos principais operadores de um algoritmo
@@ -47,11 +47,14 @@ genético é o cruzamento, que mistura os genes de diferentes cromossomos para g
 Faça um programa que leia os dados dos dois cromossomos pais (cada cromossomo é
 representado por um vetor com oito posições que armazena números inteiros). Crie uma função
 para ler um cromossomo por vez.
+
 Em seguida, deve-se selecionar o ponto de quebra, a partir do qual os genes dos cromossomos
 (valores armazenados no vetor) serão cruzados. O ponto de quebra deve ser um número aleatório
 entre 0 e 7. Para gerar números aleatórios em Java, use os comandos abaixo:
+
 Random random = new Random();
 int x = random.nextInt(8);
+
 Após selecionar o ponto de quebra o programa deve gerar os cromossomos filhos. Para gerar o
 Filho 1, deve-se pegar os elementos das posições 0 até o número sorteado do Pai 1 e os valores
 das demais posições do Pai 2. O Filho 2 é gerado com os elementos das posições 0 até o número
@@ -59,5 +62,6 @@ sorteado do Pai 2 e os valores das demais posições do Pai 1. A figura abaixo m
 gerados pelo cruzamento, considerando que o valor sorteado para o ponto de corte foi 4. Crie uma
 função que recebe os dois cromossomos pais lidos, o ponto de quebra sorteado e retorna os dois
 cromossomos filhos.
+
 Por fim, o programa deve mostrar os dois cromossomos filhos gerados. Crie uma função que
 recebe e apresenta um cromossomo por vez.
