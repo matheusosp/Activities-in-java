@@ -59,6 +59,5 @@ sorteado do Pai 2 e os valores das demais posições do Pai 1. A figura abaixo m
 gerados pelo cruzamento, considerando que o valor sorteado para o ponto de corte foi 4. Crie uma
 função que recebe os dois cromossomos pais lidos, o ponto de quebra sorteado e retorna os dois
 cromossomos filhos.
-
 Por fim, o programa deve mostrar os dois cromossomos filhos gerados. Crie uma função que
 recebe e apresenta um cromossomo por vez.
