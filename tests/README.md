@@ -29,7 +29,7 @@ apresentar o valor de A, que é dado pela seguinte fórmula.
   
   ## Prova 3
   
-1)  Faça um programa que leia uma matriz quadrada A(n) e seus valores (números inteiros).
+1  Faça um programa que leia uma matriz quadrada A(n) e seus valores (números inteiros).
 Em seguida, o programa deve calcular e apresentar as seguintes informações:
 • Soma dos elementos pares da matriz.
 • Média dos elementos ímpares da matriz.
