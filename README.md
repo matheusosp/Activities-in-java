@@ -1,6 +1,6 @@
 # Exercícios em Java
 
-## Lista 3.1
+# Lista 3.1
 
 1) Crie um programa que leia o preço do quilowatt de energia e a quantidade gasta de
 quilowatts em uma residência. O programa deve calcular e imprimir o valor a ser pago
