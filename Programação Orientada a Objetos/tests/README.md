@@ -1,4 +1,4 @@
-7.  No contexto de uma instituição bancária, que necessita de um programa
+7.No contexto de uma instituição bancária, que necessita de um programa
 orientado a objetos, pede-se:
 
 a) defina uma classe, em pseudo-código ou Java, que contenha dois construtores
@@ -18,7 +18,7 @@ imposto, procede-se a atualização do saldo.
 
 
 
-8.  Nos laboratórios e em clínicas de saúde, quando um paciente realiza o
+8.Nos laboratórios e em clínicas de saúde, quando um paciente realiza o
 cadastro, é pedido a ele que informe sua data de nascimento. A partir desta informação e
 com base na data de retorno do paciente à clínica ou ao laboratório, um software calcula a
 sua idade. Neste contexto, pede-se:
