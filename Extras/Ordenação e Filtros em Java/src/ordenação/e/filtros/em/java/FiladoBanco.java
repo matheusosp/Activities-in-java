@@ -29,7 +29,7 @@ package ordenação.e.filtros.em.java;
 
 import java.util.Arrays;
 import java.util.Scanner;
-public class OrdenaçãoEFiltrosEmJava {
+public class FiladoBanco {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int line = input.nextInt();
