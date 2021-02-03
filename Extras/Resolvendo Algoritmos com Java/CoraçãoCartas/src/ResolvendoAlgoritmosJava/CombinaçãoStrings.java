@@ -1,4 +1,4 @@
-package coraçãocartas;
+package ResolvendoAlgoritmosJava;
 
 import java.util.Scanner;
 

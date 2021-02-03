@@ -1,4 +1,4 @@
-package coraçãocartas;
+package ResolvendoAlgoritmosJava;
 import java.util.*;
 /*
 O conceito de hash é transformar uma grande quantidade de dados em uma pequena quantidade de informações. Nesse algoritmo você terá uma entrada com várias linhas, cada uma com uma string. 

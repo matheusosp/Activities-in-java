@@ -1,4 +1,4 @@
-package coraçãocartas;
+package ResolvendoAlgoritmosJava;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package coraçãocartas;
+package ResolvendoAlgoritmosJava;
 import java.io.IOException;
 import java.util.stream.Collectors;
 import java.util.*;

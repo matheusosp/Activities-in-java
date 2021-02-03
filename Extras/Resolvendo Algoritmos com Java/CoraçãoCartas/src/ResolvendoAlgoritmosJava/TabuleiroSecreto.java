@@ -1,4 +1,4 @@
-package coraçãocartas;
+package ResolvendoAlgoritmosJava;
 /*
 O senhor Milli, morador da cidade Petland, é o famoso proprietário da maior fábrica de jogos de tabuleiros do mundo. 
 
