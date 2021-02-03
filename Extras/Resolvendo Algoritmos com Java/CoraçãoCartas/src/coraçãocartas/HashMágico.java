@@ -1,89 +1,77 @@
 package coraçãocartas;
 import java.util.*;
 /*
-O senhor Milli, morador da cidade Petland, é o famoso proprietário da maior fábrica de jogos de tabuleiros do mundo. 
+O conceito de hash é transformar uma grande quantidade de dados em uma pequena quantidade de informações. Nesse algoritmo você terá uma entrada com várias linhas, cada uma com uma string. 
 
-Recentemente, ele teve a ideia de lançar um novo jogo exclusivo de tabuleiro, que ele apelidou de Tabuleiro da Frequência.
+O valor de cada caracter é computado como segue:
 
-O jogo ocorre da seguinte forma. Inicialmente, um tabuleiro com dimensões N × N é dado contendo apenas 0’s. Depois disso, Q operações são propostas, podendo ser de 4 tipos:
+Valor = (Posição no alfabeto) + (Elemento de entrada) + (Posição do elemento)
 
-1 X R: Atribuir o valor R a todos os números da linha X;
+As posições iniciam em zero. 'A' tem posição 0 no alfabeto, ‘C' tem posição 2 no alfabeto, ... O cálculo de hash retornado é a soma de todos os caracteres da entrada. Por exemplo, se a entrada for:
 
-2 X R: Atribuir o valor R a todos os números da coluna X;
+CBA
 
-3 X: Imprimir o valor mais frequente na linha X;
+DDD
 
-4 X: Imprimir o valor mais frequente da coluna X.
+então cada caractere deverá ser computado como segue:
 
-Milli não é muito bom com computadores, mas é bastante preguiçoso. Sabendo que você é um dos melhores programadores do mundo, ele precisa sua ajuda para resolver este problema.
+2 = 2 + 0 + 0 : 'C' no elemento 0 posição 0
+
+2 = 1 + 0 + 1 : 'B' no elemento 0 posição 1
+
+2 = 0 + 0 + 2 : 'A' no elemento 0 posição 2
+
+4 = 3 + 1 + 0 : 'D' no elemento 1 posição 0
+
+5 = 3 + 1 + 1 : 'D' no elemento 1 posição 1
+
+6 = 3 + 1 + 2 : 'D' no elemento 1 posição 2
+
+O cálculo final de hash será 2+2+2+4+5+6 = 21.
 
 Entrada
-A primeira linha da entrada é composta por dois inteiros N e Q (1 ≤ N, Q ≤ 105), representando, respectivamente, o tamanho do tabuleiro e a quantidade de operações. As próximas Q linhas da entrada vão conter as Q operações. O primeiro inteiro de cada linha vai indicar o tipo da operação. Caso seja 1 ou 2, será seguido por mais dois inteiros X (1 ≤ X ≤ N) e R (0 ≤ R ≤ 50). Caso seja 3 ou 4, será seguido por apenas mais um inteiro X.
+A entrada contém vários casos de teste. A primeira linha de entrada contém um inteiro N que indica a quantidade de casos de teste. Cada caso de teste inicia com um inteiro L (1 ≤ L ≤ 100) que indica a quantidade de linhas que vem a seguir. Cada uma destas L linhas contém uma string com até 50 letras maiúsculas ('A' - 'Z').
 
 Saída
-Para cada operação do tipo 3 ou 4, seu programa deve produzir uma linha, contendo o valor da resposta correspondente. Se uma linha ou coluna tiver dois ou mais valores que se repetem o mesmo número de vezes, você deve imprimir o maior deles. Por exemplo, se uma linha tem os valores [5,7,7,2,5,2,1,3], tanto o 2, 5 e 7 se repetem duas vezes, então a resposta será 7, pois é o maior deles.     
+Para cada caso de teste imprima o valor de hash que é calculado conforme o exemplo apresentado acima.
 
-Exemplo de Entrada	
-2 4
-
-1 1 1
-
-2 2 2
-
-3 1
-
-3 2
-
-Exemplo de Saída
+ 
+Exemplo de Entrada	Exemplo de Saída
+1
 2
-2
-
-Exemplo de Entrada
-3 6
-
-1 1 2
-
-1 2 3
-
-1 3 4
-
-4 3
-
-1 3 0
-
-4 3
-
-Exemplo de Saída
-4
-3
+OSADOISAJDSAOIDJA
+ASOIJDOSAJDASOIDJA	594
 */
 public class HashMágico {
     
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-        String input = sc.nextLine();
-        int N = Integer.parseInt(input);
+            Scanner sc = new Scanner(System.in);
+            String input = sc.nextLine();
+            int N = Integer.parseInt(input);
+        
+            for (int i = 0; i < N; i++) {
 
-        for (int i = 0; i < N; i++) {
+                int L = sc.nextInt();
+                int result = 0;
 
-            int L = sc.nextInt();
-            int result = 0;
+                for (int j = 0; j < L; j++) {
 
-            for (int j = 0; j < L; j++) {
+                    String lines = sc.next();
 
-                String lines = sc.next();
+                    char[] array = lines.toCharArray();
+                    for (int z = 0; z < array.length; z++) {
 
-                char[] array = lines.toCharArray();
-                for (int z = 0; z < array.length; z++) {
+                        int alPos = (int) array[z] - 65;
+                                                      result += alPos + j + z;
 
-                    int alPos = (int) array[z] - 65;
-                                                  result += alPos + j + z;
+                    }
 
                 }
 
+                System.out.println(result);
+
             }
-            System.out.println(result);
-        }
+    
     }
 }
