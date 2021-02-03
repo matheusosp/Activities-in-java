@@ -1,4 +1,4 @@
-package ordenação.de.palavras.por.tamanho;
+package IntroduçãoBuscaSubstituiçãoJava;
 
 import java.util.ArrayList;
 import java.util.Arrays;

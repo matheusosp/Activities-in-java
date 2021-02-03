@@ -1,4 +1,4 @@
-package ordenação.de.palavras.por.tamanho;
+package IntroduçãoBuscaSubstituiçãoJava;
 
 import java.io.BufferedReader;
 import java.io.IOException;
