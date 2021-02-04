@@ -10,3 +10,5 @@ https://youtu.be/45H61ry0inc Programação - 9 - VETORES - Slides
 https://youtu.be/9-XxR4hqyUg 13 - STRINGS - Netbeans
 https://youtu.be/x9un_A6m0ow 15 - MATRIZES - Netbeans
 
+https://www.loom.com/share/64b2b5c0038c4cc9b4b2600c73e5b3a0 Princípios: coesão - acoplamento e modularização 
+https://www.loom.com/share/010fa400f67243748cffad4bdac1e05e Associação 
